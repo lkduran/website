@@ -174,12 +174,16 @@ nav {
 }
 
 /* Content Sections */
-.about, .projects, .contact {
-    padding: 5rem 1rem;
+.about, .projects, .resume, .contact {
+    min-height: 100vh;
+    padding: 8rem 1rem;
     position: relative;
     z-index: 1;
-    margin: 2rem auto;
+    margin: 0 auto;
     max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-content, .project-grid {
@@ -219,14 +223,6 @@ nav {
     backdrop-filter: blur(5px);
 }
 
-/* Resume Section */
-.resume {
-    padding: 5rem 1rem;
-    position: relative;
-    z-index: 1;
-    margin: 2rem auto;
-    max-width: 1200px;
-}
 
 .resume-content {
     max-width: 800px;
