@@ -3,25 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Leah Duran | Portfolio</title>
+    <link rel="preload" href="./styles.css" as="style">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400&display=swap" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.69/build/spline-viewer.js"></script>
 </head>
 <body>
-    <div class="background-wrapper">
-        <div class="background-layer"></div>
-        <div class="background-layer"></div>
+    <div class="spline-container">
+        <spline-viewer 
+            url="https://prod.spline.design/8Y4HnXQcgPBDlpOa/scene.splinecode"
+            background="transparent"
+            loading-anim="true"
+            events-target="global"
+            zoom="false"
+            scroll="false">
+        </spline-viewer>
     </div>
+    
+    <div class="top-icons">
+        <a href="https://github.com/lkduran" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/leah-duran-70227a33b" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=leahkatya7@gmail.com&su=Hello&body=I'd%20like%20to%20connect%20with%20you" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+    
     <nav>
         <div class="nav-content">
-            <div class="logo">Portfolio</div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -29,9 +45,8 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
+            <h1>Leah Duran</h1>
             <p class="tagline">Software Developer & Creative Problem Solver</p>
-            <a href="#contact" class="cta-button">Get in Touch</a>
         </div>
     </section>
 
@@ -39,7 +54,7 @@
         <h2>About Me</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>Hello! I'm a passionate software developer with a keen interest in creating elegant solutions to complex problems. I specialize in web development and love learning new technologies.</p>
+                <p>Hello! I'm Leah Duran, a passionate and driven software developer eager to build, learn, and grow in the ever-evolving tech world. I'm always looking to expand my knowledge, collaborate with like-minded developers, and take on new challenges. Let's build something amazing!</p>
                 <div class="skills">
                     <h3>Skills</h3>
                     <div class="skill-tags">
@@ -59,11 +74,10 @@
         <h2>Projects</h2>
         <div class="project-grid">
             <div class="project-card">
-                <h3>Project 1</h3>
-                <p>A brief description of your first project goes here.</p>
+                <h3>This Website</h3>
                 <div class="project-links">
-                    <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="https://github.com/lkduran/website" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="index.html" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                 </div>
             </div>
             <div class="project-card">
@@ -77,20 +91,33 @@
         </div>
     </section>
 
+    <section id="resume" class="resume">
+        <h2>Resume</h2>
+        <div class="resume-content">
+            <p>My full resume is available for download below:</p>
+            <div class="resume-download">
+                <a href="assets/resume.pdf" class="download-button" download>
+                    <i class="fas fa-file-pdf"></i> Download Resume (PDF)
+                </a>
+                <p class="resume-note">Coming soon!</p>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="contact">
-        <h2>Contact Me</h2>
+        <h2>Contact</h2>
         <div class="contact-content">
-            <div class="social-links">
-                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+            <p>Feel free to reach out! I'd love to connect and discuss potential opportunities.</p>
+            <div class="contact-links">
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=leahkatya7@gmail.com" target="_blank" class="contact-button">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Leah Duran. All rights reserved.</p>
     </footer>
-    <script src="./script.js"></script>
 </body>
 </html>
