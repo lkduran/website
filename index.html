@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leah Duran | Portfolio</title>
-    <link rel="preload" href="./styles.css" as="style">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    <link rel="dns-prefetch" href="https://prod.spline.design">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400&display=swap" as="style">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    
     <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.69/build/spline-viewer.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.69/build/spline-viewer.js" defer></script>
 </head>
 <body>
     <div class="spline-container">
@@ -22,7 +27,8 @@
             loading-anim="true"
             events-target="global"
             zoom="false"
-            scroll="false">
+            scroll="false"
+            loading="lazy">
         </spline-viewer>
     </div>
     
@@ -80,7 +86,7 @@
                     <a href="index.html" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card" loading="lazy">
                 <h3>Project 2</h3>
                 <p>A brief description of your second project goes here.</p>
                 <div class="project-links">
